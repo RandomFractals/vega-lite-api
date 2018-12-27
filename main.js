@@ -5,6 +5,8 @@ var jsonSpec = "{\n  \"$schema\": \"https://vega.github.io/schema/vega-lite/v3.j
 console.log('spec JSON string:', jsonSpec);
 var spec = Spec_1.Convert.toSpec(jsonSpec);
 console.log('spec Object:', spec);
+// let's add a vis name
+spec.name = 'test bar chart';
 // Note: spec.mark w/ hints:
 console.log(spec.mark);
 console.log('specToJson result', Spec_1.Convert.specToJson(spec));

@@ -22,6 +22,9 @@ console.log('spec JSON string:', jsonSpec);
 const spec = Convert.toSpec(jsonSpec);
 console.log('spec Object:', spec);
 
+// let's add a vis name
+spec.name = 'test bar chart';
+
 // Note: spec.mark w/ hints:
 console.log(spec.mark);
 
